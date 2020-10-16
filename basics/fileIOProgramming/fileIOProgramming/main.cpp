@@ -30,6 +30,7 @@ int main(int argc, const char * argv[]) {
     {
         myfileI << "\nI am adding a line.\n";
         myfileI << "I am adding another line.\n";
+        myfileI << "Time to add this new line here! \n";
         myfileI.close();
     }
     else cout << "Unable to open file for writing";
