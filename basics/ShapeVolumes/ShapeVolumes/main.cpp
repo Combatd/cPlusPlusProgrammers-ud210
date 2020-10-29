@@ -17,6 +17,10 @@
 **Write the values to the console.
 */
 
+float cubeVolume(float side);
+float sphereVolume(float radius);
+float coneVolume(float radius, float height);
+
 int main() {
     // Dimension of the cube
     float cubeSide = 5.4;
@@ -27,6 +31,12 @@ int main() {
     float coneHeight = 14;
     
     float volCube, volSphere, volCone = 0;
+    volCube = cubeVolume(cubeSide);
     
+    std::cout << "The volume of cube is " << volCube << std::endl;
     return 0;
+}
+
+float cubeVolume(float side) {
+    return std::pow(side, 3);
 }
