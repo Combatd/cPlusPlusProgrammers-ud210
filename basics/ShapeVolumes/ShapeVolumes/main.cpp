@@ -32,11 +32,17 @@ int main() {
     
     float volCube, volSphere, volCone = 0;
     volCube = cubeVolume(cubeSide);
+    volSphere = sphereVolume(sphereRadius);
     
     std::cout << "The volume of cube is " << volCube << std::endl;
+    std::cout << "The volume of sphere is " << volSphere << "\n";
     return 0;
 }
 
 float cubeVolume(float side) {
     return std::pow(side, 3);
+}
+
+float sphereVolume(float radius) {
+    return 4 / 3 * M_PI * pow(radius, 3);
 }
