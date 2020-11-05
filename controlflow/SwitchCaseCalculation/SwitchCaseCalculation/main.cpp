@@ -17,9 +17,34 @@
 
 int main() {
     float in1, in2;
-    std::cout<<"Enter two numbers:\n";
-    std::cin>>in1;
-    std::cin>>in2;
-    std::cout<<"Enter the operation '+','-','*','/':\n";
+    char operation; // Will be passed into the switch case
+    float answer; // will be defined inside each case
+    
+    std::cout << "Enter two numbers:\n";
+    std::cin >> in1;
+    std::cin >> in2;
+    std::cout << "Enter the operation '+','-','*','/':\n";
+    std::cin >> operation;
+    
+    switch (operation) {
+        case '+': {
+            answer = in1 + in2;
+            break;
+        } case '-': {
+            answer = in1 - in2;
+            break;
+        } case '*': {
+            answer = in1 * in2;
+            break;
+        } case '/': {
+            answer = in1 / in2;
+            break;
+        }
+            
+        default: // if none of the above conditions are met
+            std::cout << "Invalid Arithmetic Operation!";
+    }
+    
+    std::cout << in1 << operation << in2 << " = " << answer << std::endl;
     return 0;
 }
