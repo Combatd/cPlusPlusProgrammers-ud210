@@ -19,10 +19,14 @@ int main() {
     // use 55 as the number to be guessed
     int target = 55;
     int guess = -1;
-    std::cout<<"Guess a number between 0 and 100: ";
-    std::cin>>guess;
-    std::cout<<guess<<"\n";
     
+    while(guess != target) {
+        std::cout<<"Guess a number between 0 and 100: ";
+        std::cin>>guess;
+        std::cout<<guess<<"\n";
+    }
+    
+    std::cout << target << " was the target!";
             
     return 0;
 }
