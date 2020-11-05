@@ -19,5 +19,16 @@ int main() {
     std::string givenString;
     char givenChar;
     
+    std::cout << "Enter an Integer: \n";
+    std::cin >> givenInt;
+    std::cout << "Enter a Float: \n";
+    std::cin >> givenFloat;
+    std::cout << "Enter a Double \n";
+    std::cin >> givenDouble;
+    std::cout << "Enter a String: \n"; // class string, not c string
+    std::cin >> givenString;
+    std::cout << "Enter a Character"; // one character
+    std::cin >> givenChar;
+    
     return 0;
 }
