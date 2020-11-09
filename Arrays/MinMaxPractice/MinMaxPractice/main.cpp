@@ -14,8 +14,19 @@
 
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main() {
+    int userInput = 0;
+    int maxNumber = 0;
+    int minNumber = 100;
+    int sumTotal = 0;
+    float average = 0;
+    
+    // we have 15 integers, so the loop runs from 0 to 14
+    for (int i = 0; i < 15; i++) {
+        std::cout << "Enter an integer: ";
+        std::cin >> userInput;
+        std::cout << "User entered integer" << userInput << "\n";
+    }
+    
     return 0;
 }
