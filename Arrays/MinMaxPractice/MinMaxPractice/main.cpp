@@ -25,8 +25,21 @@ int main() {
     for (int i = 0; i < 15; i++) {
         std::cout << "Enter an integer: ";
         std::cin >> userInput;
-        std::cout << "User entered integer" << userInput << "\n";
+        std::cout << "User entered integer " << userInput << "\n";
+        // enforce minNumber and maxNumber
+        if (userInput > maxNumber) {
+            maxNumber = userInput;
+        }
+        
+        if (userInput < minNumber) {
+            minNumber = userInput;
+        }
+        sumTotal = sumTotal + userInput;
     }
+    std::cout << "The Max Number = " << maxNumber << "\n";
+    std::cout << "The Min Number = " << minNumber << "\n";
+    average = sumTotal / 15.0; // average of 15 numbers
+    std::cout << "The average is " << average << "\n";
     
     return 0;
 }
